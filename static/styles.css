@@ -1,0 +1,226 @@
+html{
+	height: 100%;
+	margin: 0;
+}
+
+
+body{	
+
+	background-image:url('2.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	
+	font-family: Arial, Helvetica,sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+
+/* Website Title */
+.container{
+	padding: 30px;
+	position: relative;
+	background: #010a3b;
+	background-size: 500% 500%;
+
+}
+
+
+.container-heading{
+	margin: 0;
+	font-size: 35px;
+}
+
+.description,.footer-description{
+    font-style: italic;
+    font-size: 14px;
+    margin: 3px 0 0;
+	color: white;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+/* Text Area */
+.ml-container{
+
+    margin: 30px 0;
+	flex: 1 0 auto;
+}
+
+.message-box{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: #E9E9E9;
+  margin-bottom: 20px;
+}
+
+
+
+/* Predict Button */
+.my-cta-button{
+    	background-color:#E9E9E9;
+	border-radius: 5px;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:7px 30px;
+	margin-top: 10px;
+	text-decoration:none;
+	transition: 0.5s ease-out;
+}
+
+.my-cta-button:hover{
+	background-color: #0c0c0c;
+	color: #ffffff;
+	box-shadow: inset 7px 3px 16px -10px rgba(0,0,0,0.75);
+}
+
+.my-cta-button:active{
+	position:relative;
+	top:1px;
+}
+
+/* Footer */
+.footer{
+	bottom: 0px;
+    font-size: 14px;
+	padding: 20px;
+	flex-shrink: 0;
+	position: relative;
+	background: ##010a3b;
+	background-size: 500% 500%;
+	
+}
+
+.contact-icon{
+	color: #000000;
+	padding: 7px;
+}
+
+
+.contact-icon:hover{
+	color: #8c8c8c;
+}
+
+
+
+
+h1 {
+	color: white;
+	text-shadow: 2px 2px 4px #000000;
+  }
+
+
+h2 {
+color: white;
+text-shadow: 2px 2px 4px #000000;
+}
+
+.description{
+	color: rgb(255, 255, 255);
+}
+.dropdown-content {
+	right: 0;
+  }
+
+
+
+
+
+/* Form */
+.form-input{
+	background-color: #E9E9E9;
+	width: 370px;
+	height: 30px;
+	border-radius: 3px;
+	border: 0;
+	text-align: center;
+	-webkit-box-shadow: inset 7px 3px 16px -10px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 7px 3px 16px -10px rgba(0,0,0,0.75);
+	box-shadow: inset 7px 3px 16px -10px rgba(0,0,0,0.75);
+	margin-bottom: 15px;
+}
+
+.align-center{
+	padding: 0 30px;
+}
+
+
+.form-dropdown {
+	background-color: #E9E9E9;
+	width: 370px;
+	height: 30px;
+	border-radius: 3px;
+	border: 0;
+	-webkit-box-shadow: inset 7px 3px 16px -10px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 7px 3px 16px -10px rgba(0,0,0,0.75);
+	box-shadow: inset 7px 3px 16px -10px rgba(0,0,0,0.75);
+	margin-bottom: 15px;
+	text-indent: 40%;
+	
+	}
+
+
+	/* submit button */
+
+	/* Predict Button */
+.myButton {
+	background-color:#0c0c0c;
+	border-radius: 5px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:7px 30px;
+	margin-top: 10px;
+	text-decoration:none;
+	transition: 0.5s ease-out;
+}
+
+.myButton:hover{
+	background-color: #E9E9E9;
+	color: #000000;
+	box-shadow: inset 7px 3px 16px -10px rgba(0,0,0,0.75);
+}
+
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.float-child {
+    width: 35%;
+    float: left;
+    padding: 20px;
+
+}
+
+.leftdiv
+{ 
+	position: absolute;
+	left: 330px;
+	
+
+}
+
+.rightdiv
+{ 
+	position: absolute;
+	left: 830px;
+}
+
+.btn
+{
+	left: 480px
+}
+  

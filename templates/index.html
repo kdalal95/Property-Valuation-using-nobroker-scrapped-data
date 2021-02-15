@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Property Valuation </title>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='home.ico') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+        <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    </head>
+
+<body>
+
+        <!-- Website Title -->
+    	<div class="container">
+            <h2 class='container-heading'><i class="fa fa-home"> Property Valuation </i></h2>
+            <div class='description'>
+    			<p>A Machine Learning Web App, Built with Flask, Deployed using Heroku.</p>
+    		</div>
+        </div>
+
+    
+
+
+
+        <!-- Text Area -->
+    	<div class="ml-container">
+            <form action="{{ url_for('predict') }}" method="POST">
+
+                <div class="float-child">
+
+
+                    <div class="leftdiv">
+
+                        <div class="dropdown-content"> 
+
+                            <select class="form-dropdown" name="location" id="location">
+
+                                <option value=none>Choose a City</option>
+                                <option value="Mumbai">Mumbai</option>
+                                <option value="Delhi">Delhi</option>
+                                <option value="Banglore">Banglore</option>
+                                <option value="Chennai">Chennai</option>
+                                <option value="Hyderabad">Hyderabad</option>
+                                <option value="Pune">Pune</option>
+                                <option value="Noida">Noida</option>
+                                <option value="Faridabad">Faridabad</option>
+                                <option value="Gurgaon">Gurgaon</option>
+                                <option value="Ghaziabad">Ghaziabad</option>
+                            </select> <br>
+                            
+                            <input class="form-input" type="number" name="area" placeholder="Area is sq.ft"><br>
+
+                            <select class="form-dropdown" name="furnishing" id= "Furnishing">
+
+                                <option value=0>Furnishing</option>
+                                <option value=2>Fully Furnished</option>
+                                <option value=1>Semi Furnished</option>
+                                <option value=0>Unfurnished</option>
+
+                            </select> <br>
+
+
+                            <select class="form-dropdown" name="Facing" id="Facing">
+
+                                <option value="Dont Know">Facing</option>
+                                <option value="East">East</option>
+                                <option value="West">West</option>
+                                <option value="North">North</option>
+                                <option value="South">South</option>
+                                <option value="Dont know">Don't know</option>
+                            
+                            </select> <br>
+
+
+                            <select class="form-dropdown" name="Balcony" id="Balcony">
+
+                                <option value=0>No of Balcony</option>
+                                <option value=1>1</option>
+                                <option value=2>2</option>
+                                <option value=3>3</option>
+                                <option value=4>4</option>
+        
+                            </select> <br>
+
+                            <select class="form-dropdown" name="Bathroom" id="Bathroom">
+
+                                <option value=0>No of Bathroom</option>
+                                <option value=1>1</option>
+                                <option value=2>2</option>
+                                <option value=3>3</option>
+                                <option value=4>4</option>
+    
+                            </select> <br>
+
+
+                        </div>
+
+                    </div>
+
+                    
+
+                </div>
+
+                <div class="float-child">
+                    <div class="rightdiv">
+                        
+
+                        <select class="form-dropdown" name="Power Backup" id="Power Backup">
+
+                            <option value=0>Power Backup</option>
+                            <option value=0>None</option>
+                            <option value=1>Partial</option>
+                            <option value=2>Full</option>
+
+                        </select> <br>
+
+                        <select class="form-dropdown" name="Bedrooms" id="Bedrooms">
+
+                            <option value=0>No of Bedrooms</option>
+                            <option value=1>1</option>
+                            <option value=2>2</option>
+                            <option value=3>3</option>
+                            <option value=4>4</option>
+
+                        </select> <br>
+
+                        
+                        <select class="form-dropdown" name="Flooring" id="Flooring">
+
+                            <option value=none>Type</option>
+                            <option value="Tiles">Tiles</option>
+                            <option value="Cement">Cement</option>
+                            <option value="Wooden">Wooden</option>
+
+                        </select> <br>
+
+
+                        <select class="form-dropdown" name="Parking" id="Parking">
+
+                            <option value=0>Parking</option>
+                            <option value=3>Bike and Car</option>
+                            <option value=0>None</option>
+                            <option value=2>Car</option>
+                            <option value=1>Bike</option>
+
+                        </select> <br>
+
+
+                        <select class="form-dropdown" name="Age of Building" id="Age of Building">
+
+                            <option value=0>Age of Building</option>
+                            <option value=5>1-3 Years</option>
+                            <option value=4>3-5 Years</option>
+                            <option value=3>5-10 Years</option>
+                            <option value=2>More 10 Years</option>
+                            <option value=6>Newly Constructed</option>
+                            <option value=1>Under Construction</option>
+
+
+                        </select> <br>
+                         
+                        <input class="form-input" type="number" name="Transit Score" placeholder="Transit Score"><br>
+                            
+                    
+                        
+                    </div>
+                   
+
+                </div>
+
+                <div class="btn">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <input type="submit" class="myButton" value="Know The Valuation">
+                </div>
+
+        </form>
+           
+        </div>
+
+        
+
+
+        <!-- Footer -->
+        <div class='footer'>
+            <div class="contact">
+                <a target="_blank" href="https://github.com/kdalal95"><i class="fab fa-github fa-lg contact-icon"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/kdalal95/"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
+            </div>
+            <p class='footer-description'>Made with ❤️ by Krishna Dalal.</p>
+        </div>
+
+                    
+
+
+        
+
+    </body>
+</html>
